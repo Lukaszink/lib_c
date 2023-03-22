@@ -33,7 +33,8 @@ void libc_list_insert_back(int val, struct libc_list *list)
     end->next = next_node;
 };
 
-int libc_list_isempty(struct nlibc_ode *start)
+int libc_list_isempty(struct libc_node *start)
 {
     return (start->next == NULL);
 }
+
